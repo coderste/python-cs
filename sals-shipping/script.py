@@ -1,42 +1,40 @@
+def get_factor(thresholds, value):
+    for threshold, factor in sorted(thresholds.items()):
+        if value <= threshold:
+            return factor
+
+
 def ground_shipping_cost(weight):
+    thresholds = {2: 1.5, 6: 3.0, 10: 4.0, float("inf"): 4.75}
     flat_cost = 20
-    premium_cost = 125
-    if weight <= 2:
-        flat_cost += weight * 1.50
-    elif weight > 2 and weight <= 6:
-        flat_cost += weight * 3.00
-    elif weight > 6 and weight <= 10:
-        flat_cost += weight * 4.00
-    elif weight > 10:
-        flat_cost += weight * 4.75
-    return flat_cost, premium_cost
+    return flat_cost + (get_factor(thresholds, weight) * weight)
 
 
 def drone_shipping_cost(weight):
-    cost = 0
-    if weight <= 2:
-        cost = weight * 4.50
-    elif weight > 2 and weight <= 6:
-        cost = weight * 9.00
-    elif weight > 6 and weight <= 10:
-        cost = weight * 12.00
-    elif weight > 10:
-        cost = weight * 14.25
-    return cost
+    thresholds = {2: 4.5, 6: 9.0, 10: 12.0, float("inf"): 14.75}
+    return weight * get_factor(thresholds, weight)
 
 
 def cheapest_shipping(weight):
-    ground_cost, premium_cost = ground_shipping_cost(weight)
-    drone_cost = drone_shipping_cost(weight)
-    if drone_cost < ground_cost and drone_cost < premium_cost:
-        return "You should use drone shipping as it will only cost " + str(drone_cost)
-    if ground_cost < drone_cost and ground_cost < premium_cost:
-        return "You should use standard ground shipping as it will only cost " + str(ground_cost)
-    if premium_cost < ground_cost and premium_cost < drone_cost:
-        return "You should use premium shipping as it will only cost " + str(premium_cost)
+    methods = {
+        "drone": drone_shipping_cost,
+        "standard ground": ground_shipping_cost,
+        "premium ground": lambda weight: 125,
+    }
+    results = {method: calculation(weight)
+               for method, calculation in methods.items()}
+    cheapest_method = min(results, key=lambda method: results[method])
+    return cheapest_method, results[cheapest_method]
 
 
-print(cheapest_shipping(4.8))
-print(cheapest_shipping(41.5))
-print(cheapest_shipping(1.5))
-print(cheapest_shipping(4.0))
+method, cost = cheapest_shipping(10)
+print(f"You should use {method} shipping as it will only cost {cost}")
+
+method, cost = cheapest_shipping(1)
+print(f"You should use {method} shipping as it will only cost {cost}")
+
+method, cost = cheapest_shipping(8.4)
+print(f"You should use {method} shipping as it will only cost {cost}")
+
+method, cost = cheapest_shipping(100)
+print(f"You should use {method} shipping as it will only cost {cost}")
