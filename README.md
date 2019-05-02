@@ -23,3 +23,7 @@ Learning the fundamentals of computer science with Python. Following the career 
 ### Questionnaires
 
 The course also contains questionnaires and I will be posting my results in the table below.
+
+| Name                      | Correct | Percentage | Total |
+| ------------------------- | ------- | ---------- | ----- |
+| Creating Python List Quiz | 7       | 77%        | 9     |
