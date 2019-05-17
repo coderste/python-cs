@@ -27,3 +27,7 @@ The course also contains questionnaires and I will be posting my results in the 
 | Name                      | Questions | Correct | Percentage |
 | ------------------------- | --------- | ------- | ---------- |
 | Creating Python List Quiz | 9         | 7       | 77%        |
+
+### NOTES.md files
+
+I leave some NOTES.md files in some folders to help jog my memory in the future on certain lessons on the course I might forget
