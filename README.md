@@ -22,7 +22,7 @@ Learning the fundamentals of computer science with Python. Following the career 
 
 ### Questionnaires
 
-The course also contains questionnaires and I will be posting my results in the table below.
+The course also contains questionnaires and I will be posting my results in the table below. After I've finished the whole course I will re-take every questionnaire and fill in the table below to see how much I've learnt
 
 | Name                      | Questions | Correct | Percentage |
 | ------------------------- | --------- | ------- | ---------- |
