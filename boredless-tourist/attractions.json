@@ -1,0 +1,89 @@
+{
+    "attractions": [
+        [
+            [
+                "Venice Beach",
+                [
+                    "beach"
+                ]
+            ]
+        ],
+        [
+            [
+                "the Louvre",
+                [
+                    "art",
+                    "museum"
+                ]
+            ],
+            [
+                "Arc de Triomphe",
+                [
+                    "historical site",
+                    "monument"
+                ]
+            ]
+        ],
+        [
+            [
+                "Yu Garden",
+                [
+                    "garden",
+                    "historcical site"
+                ]
+            ],
+            [
+                "Yuz Museum",
+                [
+                    "art",
+                    "museum"
+                ]
+            ],
+            [
+                "Oriental Pearl Tower",
+                [
+                    "skyscraper",
+                    "viewing deck"
+                ]
+            ]
+        ],
+        [
+            [
+                "LACMA",
+                [
+                    "art",
+                    "museum"
+                ]
+            ]
+        ],
+        [
+            [
+                "São Paulo Zoo",
+                [
+                    "zoo"
+                ]
+            ],
+            [
+                "Pátio do Colégio",
+                [
+                    "historical site"
+                ]
+            ]
+        ],
+        [
+            [
+                "Pyramids of Giza",
+                [
+                    "monument",
+                    "historical site"
+                ]
+            ],
+            [
+                "Egyptian Museum",
+                [
+                    "museum"
+                ]
+            ]
+        ]
+    ]
+}
