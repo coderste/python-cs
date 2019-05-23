@@ -2,14 +2,6 @@
     "attractions": [
         [
             [
-                "Venice Beach",
-                [
-                    "beach"
-                ]
-            ]
-        ],
-        [
-            [
                 "the Louvre",
                 [
                     "art",
@@ -48,6 +40,12 @@
             ]
         ],
         [
+            [
+                "Venice Beach",
+                [
+                    "beach"
+                ]
+            ],
             [
                 "LACMA",
                 [
