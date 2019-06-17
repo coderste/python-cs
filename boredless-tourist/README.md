@@ -6,3 +6,16 @@ Welcome to The Boredless Tourist, an online application giving you the power to 
 ### Lessons
 
 In this lesson we will build a Build a Tourism Recommendation Engine
+
+### Versions
+
+`version-1.py` is version 1 of this script where everything is pretty much hard-coded
+
+#### Ideas for version 2?
+
+- Allow user input via the terminal (other than name they can't say any destination or interests)
+
+#### Ideas for version 3?
+
+- Allow user input via the terminal
+- Go off to some api (maybe Google) and return the attractions based on the destination input and interest input
