@@ -1,6 +1,6 @@
 # Python Computer Science
 
-Learning the fundamentals of computer science with Python. Following the career path on [Codecademy](https://www.codecademy.com/learn/paths/computer-science) to level up my theoretical knowledge.
+Learning the fundamentals of computer science with Python. Following the computer science career path on [Codecademy](https://www.codecademy.com/learn/paths/computer-science) to level up my theoretical knowledge.
 
 ### What I'll learn with this course
 
@@ -28,6 +28,8 @@ The course also contains questionnaires and I will be posting my results in the 
 | ------------------------- | --------- | ------- | ---------- |
 | Creating Python List Quiz | 9         | 7       | 77%        |
 
-### NOTES.md files
+---
 
-I leave some NOTES.md files in some folders to help jog my memory in the future on certain lessons on the course I might forget
+### NOTES.md
+
+I will be taking notes on some lessons. These notes will be in the form of markdown within some folders.
